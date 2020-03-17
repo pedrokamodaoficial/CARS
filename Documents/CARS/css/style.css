@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'titillium-web', sans-serif;
+    background-color: var(--background);
+}
+:root{
+    --background: #CCCCCC;
+}
+.gradient{
+    background: rgb(102,102,102);
+    background: linear-gradient(180deg, rgba(102,102,102,1) 0%, rgba(128,128,128,1) 50%, rgba(160,160,160,1) 100%);
+    width: 50%;
+    height: 50px;
+    border-radius: 30px;
+}
+.fundo{
+    background-color: #484848;
+    box-shadow: 0px 6px 3px #484848;
+}
+
+.cabeca{
+    background-color: #484848;
+    height: 55px;
+    box-shadow: 0px 6px 3px #484848;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.parte1{
+   margin-left: -70px; 
+}
+.parte2{
+    margin-right: -70px;
+}
+.cabeca i{
+    color:white;
+    font-size:27px;    
+}
+.cabeca img{
+    width: 81px;
+    height: 52px;
+}
+.secao{
+    width: 100%;
+    padding-right: 40px;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    color: white;
+}
+.card{
+    width: 45%;
+    margin: 2%;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+.card img{
+    width: 100%;
+    padding: 7px;
+}
+.card h2{
+    align-items: center;
+    margin-top: 1em;
+    padding: 5px;
+    text-transform: uppercase;
+}
+p{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 15px;
+}
+footer{
+    box-shadow: 0px 0px 10px black;
+    color: white;
+    margin-top: 30px ;
+    background: rgb(0, 0,0);
+    box-shadow: 0px 0px 10px black;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+footer img{
+    width: 300px;
+    height: 200px;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer ul{
+    list-style-type: none;
+}
+footer .sociais{
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--purple);
+    font-size: 2em;
+    padding: 1.2em 0px;
+}
+footer h5{
+    padding-bottom: 1.2em;
+    color: #474747;
+    font-size: 1.7em;
+}
+footer h6{
+    text-align: end;
+    font-size: 1.1em;
+}
+footer p{
+    text-align: center;
+    color: #474747;
+}
+@media (min-width: 426px){
+    .desk{
+        display: none;
+    }
+    .gradient {
+        width: 70%;
+        height: 60px;
+        margin-left: 15%;
+    }
+    footer h5, h6{
+        display: none;
+    }
+}
+@media (min-width: 768px){
+    .cabeca{
+        height: 100px;
+    }
+    .gradient {
+        width: 70%;
+        height: 60px;
+        margin-left: 15%;
+    }
+    .gradient p{
+        padding-top: 20px;
+        font-size: 1.5em;
+    }
+    .card{
+        width: 70%;
+    }
+    .card img{
+        width: 50%;
+        padding: 25px;
+    }
+    .secao{
+        padding: 0;
+        margin: 0;
+    }
+}
+@media (min-width: 1201px){
+    .fa-bars{
+        display: none;
+    }
+    .desk{
+        display: flex;
+    }
+    .desk a{
+        color: white;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        padding: 35px;
+    }
+    .desk a:hover{
+        color: black;
+    }
+    .cabeca{
+        height: 200px;
+        justify-content: center;
+    }
+    .parte1 img{
+        width: 250px;
+        height: 150px;
+    }
+    .gradient {
+        width: 60%;
+        height: 60px;
+        margin-left: 20%;
+        padding: 10px;
+    }
+    .gradient p{
+        font-size: 3em;
+        padding: 10px;
+    }
+    .card{
+        width: 700px;
+    }
+    .card img{
+        margin-top: 10px;
+        width: 80%;
+    }
+}
